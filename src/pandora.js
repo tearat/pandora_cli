@@ -46,8 +46,8 @@ class Pandora{
                 if (this.head.name !== undefined){
                     this.head[this.edit_state] = answer;
                     console.log(this.head);
-                    this.edit_state = null;
                     console.log(`${this.edit_state} changed to ${answer}`);
+                    this.edit_state = null;
                     this.terminal();
                 } else {
                     console.log('Cannot edit in root.');
@@ -149,7 +149,7 @@ class Pandora{
             switch (answer){
                 case "help":
                 case "h":
-                    console.log(`\n [help|h] = this message \n\n [add|new ?] = Add new item to DB |n [cd|o ?] = Open item \n [e ?] = Edit parameter \n [rm ?] = Remove parameter \n [del] = Delete item \n\n [r|read] = read the current state(head) \n [list|l] = List of all records \n [save|s] = save changes \n\n [key ?] = set a crypto-key \n [enc] = Encrypt data \n [dec] = Decrypt data \n\n [quit|q|exit] = exit`);
+                    console.log(`\n [help|h] = this message \n\n [add|new ?] = Add new item to DB \n [cd|o ?] = Open item \n [e ?] = Edit parameter \n [rm ?] = Remove parameter \n [del] = Delete item \n\n [r|read] = Read the current state (head) \n [list|l] = List of all records \n [save|s] = Save changes \n\n [key ?] = Set a crypto-key \n [enc] = Encrypt data \n [dec] = Decrypt data \n\n [quit|q|exit] = exit`);
                     this.terminal();
                     break;
                 case "back":
