@@ -1,11 +1,8 @@
 // Pandora
 // CLI database
-// v0.00001
+// v0.00002
 
-const {Pandora} = require('./pandora');
+const {Pandora, Terminal} = require('./pandora');
 
-const endpoint = './src/data/data.json';
-
-let pandora = new Pandora(endpoint);
-
-pandora.terminal();
+let pandora = new Pandora();
+let terminal = new Terminal(pandora);
